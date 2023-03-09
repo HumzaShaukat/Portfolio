@@ -7,8 +7,8 @@ export default function Project({ project }) {
       <a href={link} target="_blank">
         <img src={require(`../../assets/cards/${name}.jpg`)} alt={name} />
       </a>
-      <a href={repo}>Repository</a>
-      <p>{description}</p>
+      <a href={repo}>Repo</a>
+      <p>Summary: {description}</p>
     </div>
   );
 }

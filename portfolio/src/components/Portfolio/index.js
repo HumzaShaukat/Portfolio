@@ -16,24 +16,24 @@ function Portfolio() {
       link: "https://github.com/HumzaShaukat/TekToday",
       repo: "https://github.com/HumzaShaukat/TekToday",
     },
-    {
-      name: "run-buddy",
-      description: "HTML/CSS",
-      link: "https://github.com",
-      repo: "https://github.com",
-    },
-    {
-      name: "led-wall",
-      description: "Node/IoT",
-      link: "https://github.com",
-      repo: "https://github.com",
-    },
-    {
-      name: "calculator",
-      description: "React/JavaScript/CSS",
-      link: "https://github.com",
-      repo: "https://github.com",
-    },
+    // {
+    //   name: "run-buddy",
+    //   description: "HTML/CSS",
+    //   link: "https://github.com",
+    //   repo: "https://github.com",
+    // },
+    // {
+    //   name: "led-wall",
+    //   description: "Node/IoT",
+    //   link: "https://github.com",
+    //   repo: "https://github.com",
+    // },
+    // {
+    //   name: "calculator",
+    //   description: "React/JavaScript/CSS",
+    //   link: "https://github.com",
+    //   repo: "https://github.com",
+    // },
   ]);
 
   return (
