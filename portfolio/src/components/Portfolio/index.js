@@ -10,10 +10,11 @@ function Portfolio() {
       repo: "https://github.com/HumzaShaukat/QuizCR8R",
     },
     {
-      name: "pastel-puzzels",
-      description: "MERN Stack",
-      link: "https://github.com",
-      repo: "https://github.com",
+      name: "TekToday",
+      description:
+        "Utilized MySQL, Sequelize, NodeJS, ExpressJS, and Express-Handlebars to create a full-stack blog",
+      link: "https://github.com/HumzaShaukat/TekToday",
+      repo: "https://github.com/HumzaShaukat/TekToday",
     },
     {
       name: "run-buddy",
@@ -37,7 +38,7 @@ function Portfolio() {
 
   return (
     <div>
-      <div className="flex-row">
+      <div className="portfolio">
         {projects.map((project, idx) => (
           <Project project={project} key={"project" + idx} />
         ))}
