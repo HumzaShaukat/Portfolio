@@ -23,7 +23,7 @@ header {
   vertical-align: middle;
   height: 50vw;
   min-height: 500px;
-  max-height: 700px;
+  max-height: 600px;
   min-width: 300px;
   color:#eee;
 }
@@ -44,7 +44,7 @@ header::before {
   width:100vw;
   height:100vh;
   position:absolute;
-  background: #1B2030 url("../../portfolio/src/assets/header/Sunset.png");
+  background: #1B2030 url("../../portfolio/src/assets/header/Sunset.png") repeat;
   background-size:100%;
   background-attachment:fixed;
   z-index: -2;
@@ -79,7 +79,9 @@ nav {
 .about {
   display: flex;
   flex-direction: column;
-  margin: 10%;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 2vh;
   align-items: center;
 }
 
@@ -108,12 +110,29 @@ form {
   align-items: center;
 }
 
-button {
-  max-width: 3vw;
+#contact {
+  display:flex;
+  align-items: center;
+  width: 30vw;
 }
 
-#contact {
-  align-items: center;
+#contact input, textarea {
+  width:15vw;
+  margin-bottom: 1vh;
+}
+
+#contact input {
+  margin-left: 1vw;
+}
+
+#contact div {
+  display: flex;
+  align-items: baseline;
+}
+ 
+
+button {
+  max-width: 15vw;
 }
 
 .portfolio {
@@ -127,9 +146,33 @@ button {
 }
 
 .card {
+  border: solid black 1px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  max-width: 25vw;
+  width: 20vw;
   margin-right: 4vw;
   margin-left: 4vw;
+  padding: 1vw;
+} 
+
+.bold {
+  font-weight: bold;
+  margin-bottom: 0vh;
+}
+
+footer {
+  font-size: 48px;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--light);
+  opacity: .5;
+  margin: 10px 20px;
+  transition: all .3s ease-in-out;
+}
+
+footer a:hover {
+  opacity: 1;
 }

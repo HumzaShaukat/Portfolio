@@ -30,7 +30,7 @@ function App() {
       <main>
         <Content currentPage={currentPage}></Content>
       </main>
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 }

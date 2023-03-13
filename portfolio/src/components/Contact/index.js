@@ -3,19 +3,19 @@ import React, { useState } from "react";
 import { checkEmail } from "../../utils/helpers";
 
 function Contact() {
-  const [formState, setFormState] = useState({
+  const [signUpForm, setSignUpForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
   const [errorMessage, setErrorMessage] = useState("");
-  const { name, email, message } = formState;
+  const { name, email, message } = signUpForm;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
-      console.log("Submit Form", formState);
+      console.log("Submit Form", signUpForm);
     }
   };
 
@@ -35,8 +35,8 @@ function Contact() {
       }
     }
     if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log("Handle Form", formState);
+      setSignUpForm({ ...signUpForm, [e.target.name]: e.target.value });
+      console.log("Handle Form", signUpForm);
     }
   };
 
@@ -53,7 +53,7 @@ function Contact() {
           />
         </div>
         <div>
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email"> Email: </label>
           <input
             type="email"
             name="email"
@@ -61,18 +61,18 @@ function Contact() {
             onBlur={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
+        <div className="textArea">
+          <label htmlFor="message">Message: </label>
           <textarea
             name="message"
-            rows="6"
+            rows="5"
             defaultValue={message}
             onBlur={handleChange}
           />
         </div>
         {errorMessage && (
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <p className="error">{errorMessage}</p>
           </div>
         )}
         <button type="submit">Submit</button>
