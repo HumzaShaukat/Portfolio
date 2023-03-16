@@ -2,28 +2,31 @@ import React, { useState } from "react";
 
 import { checkEmail } from "../../utils/helpers";
 
+//Contact form with some boilerplate code from instructor
 function Contact() {
-  const [signUpForm, setSignUpForm] = useState({
+  //default state for the contact form is every field empty.
+  const [contactForm, setContactForm] = useState({
     name: "",
     email: "",
     message: "",
   });
 
+  //default errorMessage state is nothing
   const [errorMessage, setErrorMessage] = useState("");
-  const { name, email, message } = signUpForm;
+  //destructuring state
+  const { name, email, message } = contactForm;
 
+  //just submit, no backend functionality yet
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!errorMessage) {
-      console.log("Submit Form", signUpForm);
-    }
   };
 
+  //change handler that checks if the input is a valid email
   const handleChange = (e) => {
     if (e.target.name === "email") {
       const isEmail = checkEmail(e.target.value);
       if (!isEmail) {
-        setErrorMessage("Invalid Email!");
+        setErrorMessage("Invalid email entered!");
       } else {
         setErrorMessage("");
       }
@@ -34,9 +37,9 @@ function Contact() {
         setErrorMessage("");
       }
     }
+    //if everything is correct the new state is set to the input
     if (!errorMessage) {
-      setSignUpForm({ ...signUpForm, [e.target.name]: e.target.value });
-      console.log("Handle Form", signUpForm);
+      setContactForm({ ...contactForm, [e.target.name]: e.target.value });
     }
   };
 

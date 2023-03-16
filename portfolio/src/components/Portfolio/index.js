@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Project from "../Project";
 function Portfolio() {
+  //list of projects is current state which is a static list currently.  Eventually can be queried from database
   const [projects] = useState([
     {
       name: "Quiz CR8R",
@@ -16,31 +17,41 @@ function Portfolio() {
       link: "https://github.com/HumzaShaukat/TekToday",
       repo: "https://github.com/HumzaShaukat/TekToday",
     },
-    // {
-    //   name: "run-buddy",
-    //   description: "HTML/CSS",
-    //   link: "https://github.com",
-    //   repo: "https://github.com",
-    // },
-    // {
-    //   name: "led-wall",
-    //   description: "Node/IoT",
-    //   link: "https://github.com",
-    //   repo: "https://github.com",
-    // },
-    // {
-    //   name: "calculator",
-    //   description: "React/JavaScript/CSS",
-    //   link: "https://github.com",
-    //   repo: "https://github.com",
-    // },
+    {
+      name: "E-Commerce-Back-End",
+      description:
+        "Utilized Node, ExpressJS, MySQL, and mysql2 to create a backend for an E-Commerce website that tracks all entered products and their related information including price, categories, and tags.",
+      link: "https://github.com/HumzaShaukat/E-Commerce-Back-End",
+      repo: "https://github.com/HumzaShaukat/E-Commerce-Back-End",
+    },
+    {
+      name: "SocialNetwork-API",
+      description:
+        "Used Mongoose, MongoDB, Express, and Node to create a backend API for a social network that allows for user, thought, and reaction creation as well as adding and removing friends.",
+      link: "https://github.com/HumzaShaukat/SocialNetwork-API",
+      repo: "https://github.com/HumzaShaukat/SocialNetwork-API",
+    },
+    {
+      name: "Note Taker",
+      description:
+        "Created an application to create and store notes for a user using Node and ExpressJS",
+      link: "https://gentle-depths-71408.herokuapp.com/",
+      repo: "https://github.com/HumzaShaukat/NoteTaker",
+    },
+    {
+      name: "Space Encyclopedia",
+      description:
+        "Created frontend application using HTML, CSS, and JavaScript that uses the Wikipedia and NASA images APIs.",
+      link: "https://humzashaukat.github.io/SpaceEncyclopedia/",
+      repo: "https://github.com/HumzaShaukat/SpaceEncyclopedia",
+    },
   ]);
 
   return (
     <div>
       <div className="portfolio">
-        {projects.map((project, idx) => (
-          <Project project={project} key={"project" + idx} />
+        {projects.map((project) => (
+          <Project project={project} />
         ))}
       </div>
     </div>

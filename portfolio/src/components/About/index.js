@@ -1,6 +1,7 @@
 import React from "react";
 import HeadShot from "../../assets/headshot/headshot.jpg";
 
+//very simple about me component that returns my picture and a short bio.
 export default function AboutMe() {
   return (
     <section className="about">

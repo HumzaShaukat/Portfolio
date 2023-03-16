@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 
 function Navigation(props) {
+  //destructures variable from props
   const { pages = [], setCurrentPage, currentPage } = props;
+  //changes the document title based off of page name
   useEffect(() => {
     document.title = currentPage.name;
   }, [currentPage]);
@@ -9,10 +11,7 @@ function Navigation(props) {
     <nav>
       <ul className="nav">
         {pages.map((Page) => (
-          <li
-            className={`${currentPage.name === Page.name && "navActive"}`}
-            key={Page.name}
-          >
+          <li key={Page.name}>
             <span onClick={() => setCurrentPage(Page)}>{Page.name}</span>
           </li>
         ))}

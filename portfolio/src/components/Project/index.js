@@ -1,5 +1,6 @@
 import React from "react";
 
+//creates the cards for each project
 export default function Project({ project }) {
   const { name, repo, link, description } = project;
   return (
