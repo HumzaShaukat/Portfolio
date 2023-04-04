@@ -4,6 +4,13 @@ function Portfolio() {
   //list of projects is current state which is a static list currently.  Eventually can be queried from database
   const [projects] = useState([
     {
+      name: "Speeddater",
+      description:
+        "Utilizes the full MERN stack along with AWS S3 to create a dating app that allows you to connect with other users and hopefully find love",
+      link: "https://speeddater.herokuapp.com/",
+      repo: "https://github.com/HumzaShaukat/SpeedDater",
+    },
+    {
       name: "Quiz CR8R",
       description:
         "Utilizes CSS, HTML, HandlebarsJS, expressJS, NodeJS, MySQL and sequelize to create a full stack website used for creating quizzes to assist in studying",
