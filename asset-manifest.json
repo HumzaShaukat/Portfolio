@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2f8aa4ff.css",
-    "main.js": "/Portfolio/static/js/main.d7253d8b.js",
+    "main.js": "/Portfolio/static/js/main.876fe058.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/Sunset.png": "/Portfolio/static/media/Sunset.394371ca58a534a00579.png",
     "static/media/Space Encyclopedia.jpg": "/Portfolio/static/media/Space Encyclopedia.53844004387cadb977ce.jpg",
+    "static/media/Speeddater.jpg": "/Portfolio/static/media/Speeddater.b14d8648ba94b2e98dbd.jpg",
     "static/media/CS_Resume_Humza_Shaukat_2023.pdf": "/Portfolio/static/media/CS_Resume_Humza_Shaukat_2023.2e1f14681b9a80f8fd19.pdf",
     "static/media/headshot.jpg": "/Portfolio/static/media/headshot.0191f367559425c4d30f.jpg",
     "static/media/Quiz CR8R.jpg": "/Portfolio/static/media/Quiz CR8R.348ec36341cb7cf6bb9f.jpg",
@@ -14,11 +15,11 @@
     "static/media/Note Taker.jpg": "/Portfolio/static/media/Note Taker.43ca17f6f579b137316e.jpg",
     "index.html": "/Portfolio/index.html",
     "main.2f8aa4ff.css.map": "/Portfolio/static/css/main.2f8aa4ff.css.map",
-    "main.d7253d8b.js.map": "/Portfolio/static/js/main.d7253d8b.js.map",
+    "main.876fe058.js.map": "/Portfolio/static/js/main.876fe058.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f8aa4ff.css",
-    "static/js/main.d7253d8b.js"
+    "static/js/main.876fe058.js"
   ]
 }
